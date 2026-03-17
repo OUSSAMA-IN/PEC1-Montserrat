@@ -1,36 +1,111 @@
 <!doctype html>
-
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Visita Montserrat</title>
   </head>
+
   <body>
     <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+      <header class="portada">
+        <div class="portada__contenido">
+          <p class="portada__subtitulo">Destino único en Cataluña</p>
+          <h1 class="portada__titulo">Visita Montserrat</h1>
+          <p class="portada__texto">
+            Descubre uno de los paisajes más impresionantes de Cataluña.
+          </p>
+          <a href="#sobre-montserrat" class="portada__boton">Descubrir más</a>
+        </div>
+      </header>
+
+      <main class="contenedor">
+        <section id="sobre-montserrat" class="section">
+          <h2 class="section__titulo">Sobre Montserrat</h2>
+          <p class="section__texto">
+            Montserrat es una montaña situada cerca de Barcelona, conocida por sus
+            formaciones rocosas únicas y por el famoso monasterio de Montserrat.
+            Es un destino muy popular para excursiones, senderismo y turismo.
+          </p>
+        </section>
+
+        <section id="places" class="section">
+          <h2 class="section__titulo">¿Qué ver?</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3 class="card__title">
+                <i class="card__icon fa-solid fa-landmark"></i>
+                <span>Monasterio de Montserrat</span>
+              </h3>
+              <p class="card__text">
+                Un monasterio histórico situado en la montaña y uno de los lugares
+                más visitados de Cataluña.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">
+                <i class="card__icon fa-solid fa-mountain"></i>
+                <span>Miradores</span>
+              </h3>
+              <p class="card__text">
+                Desde la montaña se pueden ver paisajes espectaculares y disfrutar
+                de vistas panorámicas.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">
+                <i class="card__icon fa-solid fa-person-hiking"></i>
+                <span>Senderos de montaña</span>
+              </h3>
+              <p class="card__text">
+                Montserrat ofrece diferentes rutas para caminar y descubrir la
+                naturaleza.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="visit" class="section">
+          <h2 class="section__titulo">
+            <i class="section__icon fa-solid fa-train"></i>
+            <span>¿Cómo llegar?</span>
+          </h2>
+          <p class="section__texto">
+            Montserrat se puede visitar desde Barcelona en coche o en transporte
+            público. Una opción popular es tomar el tren y luego subir con el
+            cremallera o el funicular.
+          </p>
+        </section>
+
+        <section id="gallery" class="section">
+          <h2 class="section__titulo">
+            <i class="section__icon fas fa-images"></i>
+            <span>Galería</span>
+          </h2>
+
+          <div class="galeria">
+            <img
+              src="./assets/images/gallery1.jpg"
+              alt="Paisaje de Montserrat"
+            />
+            <img
+              src="./assets/images/gallery2.jpg"
+              alt="Monasterio de Montserrat"
+            />
+            <img
+              src="./assets/images/gallery3.jpeg"
+              alt="Montaña de Montserrat"
+            />
+          </div>
+        </section>
+      </main>
     </div>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
   </body>
 </html>
